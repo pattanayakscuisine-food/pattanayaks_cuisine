@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4GZX62PNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G4GZX62PNV');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Join the Pattanayak's Cuisine community. Share your thoughts, suggest recipes, or collaborate with us." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Join Us — Pattanayak's Cuisine" />
+<meta property="og:description" content="Share your food thoughts, suggest recipes, or collaborate with Pattanayak's Cuisine." />
+<meta property="og:url" content="https://pattanayakcuisine.web.app/joinus.html" />
+<meta property="og:image" content="https://pattanayakcuisine.web.app/images/logo.png" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us — Pattanayak's Cuisine</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Pattanayak's Cuisine Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="logo-text">Pattanayak's</span>
+          <span class="logo-sub">Cuisine</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="explore.html" class="nav-link">Explore</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="joinus.html" class="nav-link active">Join Us</a>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="hero-badge">✦ Community</div>
+      <h1>Join <em>Us</em></h1>
+      <p>Share your thoughts, recipes, and food stories with us.</p>
+    </div>
+  </section>
+
+  <!-- ===== WHY JOIN ===== -->
+  <section class="section-pad" style="background: var(--white);">
+    <div class="container">
+      <div class="section-tag">Why Join</div>
+      <h2 class="section-title">Be Part of Our<br/><em>Food Community</em></h2>
+      <div class="join-reasons">
+        <div class="join-reason-card">
+          <span class="reason-icon">💬</span>
+          <h3>Share Your Thoughts</h3>
+          <p>Loved a dish we featured? Tell us about it. Your feedback inspires our next post.</p>
+        </div>
+        <div class="join-reason-card">
+          <span class="reason-icon">🍳</span>
+          <h3>Suggest a Recipe</h3>
+          <p>Have a favourite recipe you want us to try? Drop it here and we might feature it!</p>
+        </div>
+        <div class="join-reason-card">
+          <span class="reason-icon">🤝</span>
+          <h3>Collaborate With Us</h3>
+          <p>Are you a food brand, chef, or creator? Let's create something delicious together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section class="section-pad" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Send Us a<br/><em>Message</em></h2>
+      <p class="section-desc">Fill in the form below and we'll get back to you as soon as possible!</p>
+
+      <div class="contact-form-wrap">
+
+        <div id="formSuccess" class="form-success hidden">
+          <div class="success-icon">🎉</div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. We'll get back to you soon!</p>
+          <button class="btn btn-primary" onclick="resetForm()">Send Another</button>
+        </div>
+
+        <!-- 
+          HOW TO RECEIVE FORM EMAILS (FREE):
+          1. Go to https://formspree.io and sign up free
+          2. Click "New Form" and copy your Form ID
+          3. Replace YOUR_FORM_ID below with your actual ID
+          Example: action="https://formspree.io/f/xpwzabcd"
+        -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpqezogy" method="POST">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="e.g. Riya Das" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What is this about?</label>
+            <select id="subject" name="subject">
+              <option value="comment">💬 Comment on a dish</option>
+              <option value="recipe">🍳 Recipe suggestion</option>
+              <option value="collab">🤝 Collaboration</option>
+              <option value="question">❓ General question</option>
+              <option value="other">✉️ Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your thoughts, suggestions, or questions here..." required></textarea>
+          </div>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+            <label for="subscribe">Notify me when new dishes are posted 🍴</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL CONNECT ===== -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <p class="cta-tag">Also Find Us Here</p>
+      <h2>Connect On<br/><em>Social Media</em></h2>
+      <div class="social-row">
+        <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="social-pill instagram">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/share/17nP2fxaYD/" target="_blank" class="social-pill facebook">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a href="https://whatsapp.com/channel/0029VaCn9EvCRs1x3YvdQt1g" target="_blank" class="social-pill whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHATBOT ===== -->
+   <!-- Chatbot intro bubble -->
+<div class="chatbot-intro-bubble" id="chatbotIntroBubble" onclick="openChatFromBubble()">
+  <span>👩‍🍳 Hi, I'm Chef Saini!</span>
+  <span style="color:var(--text-muted);font-size:0.76rem;">Ask me anything</span>
+  <button class="bubble-close" onclick="closeBubble(event)" aria-label="Close">✕</button>
+</div>
+  <button class="chatbot-fab" id="chatbotFab" aria-label="Open Recipe Chatbot">
+    <i class="fa-solid fa-robot"></i>
+    <span class="fab-tooltip">Ask about recipes!</span>
+  </button>
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">👩‍🍳</div>
+        <div>
+          <strong>Chef Saini</strong>
+          <span>Ask me anything about food!</span>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-msg bot">
+        <div class="chat-bubble">👋 Hi! I'm Chef Saini. Ask me about any dish, recipe, or cuisine!</div>
+      </div>
+      <div class="chat-suggestions">
+        <button class="chat-suggestion" onclick="sendSuggestion(this)">How to make Hilsa curry?</button>
+        <button class="chat-suggestion" onclick="sendSuggestion(this)">Easy pasta recipe</button>
+        <button class="chat-suggestion" onclick="sendSuggestion(this)">What is mishti doi?</button>
+      </div>
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatInput" placeholder="Ask about any recipe..." />
+      <button id="chatSend"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>Pattanayak's Cuisine</span>
+        <p>Presenting our take on various cuisines across the world.</p>
+      </div>
+      <nav class="footer-nav">
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore</a>
+  <a href="about.html">About Us</a>
+  <a href="joinus.html">Join Us</a>   
+</nav>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/17nP2fxaYD/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaCn9EvCRs1x3YvdQt1g" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Soham Pattanayak. Made with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script>
+  function closeBubble(e) {
+    e.stopPropagation();
+    document.getElementById("chatbotIntroBubble").classList.add("hide");
+  }
+  function openChatFromBubble() {
+    document.getElementById("chatbotIntroBubble").classList.add("hide");
+    document.getElementById("chatbotPanel").classList.add("open");
+    document.getElementById("chatbotFab").classList.add("active");
+    document.getElementById("chatInput").focus();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "pattanayaks-cuisine-functions",
+  "description": "Cloud Functions for Pattanayak's Cuisine — Gemini AI proxy",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-functions": "^6.3.2"
+  },
+  "private": true
+}

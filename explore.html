@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4GZX62PNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G4GZX62PNV');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Explore Bengali, Italian, and Random cuisines around the world by Pattanayak's Cuisine. Tap any cuisine to see our food adventures, photos, and Instagram posts." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Explore — Pattanayak's Cuisine" />
+<meta property="og:description" content="Explore Bengali, Italian, and world cuisine food posts by Pattanayak's Cuisine." />
+<meta property="og:url" content="https://pattanayakcuisine.web.app/explore.html" />
+<meta property="og:image" content="https://pattanayakcuisine.web.app/images/logo.png" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore — Pattanayak's Cuisine</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Pattanayak's Cuisine Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="logo-text">Pattanayak's</span>
+          <span class="logo-sub">Cuisine</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="explore.html" class="nav-link active">Explore</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="joinus.html" class="nav-link">Join Us</a>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="hero-badge">✦ Food Diary</div>
+      <h1>The Pattanayaks'<br/><em>Food Diary</em></h1>
+      <p>See What We Explored</p>
+    </div>
+  </section>
+
+  <!-- ===== FILTER TABS ===== -->
+  <section class="explore-section section-pad">
+    <div class="container">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="bengali">Bengali</button>
+        <button class="filter-btn" data-cat="italian">Italian</button>
+        <button class="filter-btn" data-cat="random">Random</button>
+      </div>
+
+      <!-- FOOD POSTS GRID -->
+      <div class="posts-grid" id="postsGrid">
+
+        <!-- ═══════════════════════════════════
+             BENGALI CUISINE CARD
+        ════════════════════════════════════ -->
+        <article class="post-card expandable-card" data-cat="bengali" id="card-bengali" onclick="toggleCard('bengali')">
+          <div class="post-img-wrap">
+            <img src="images/Bengali_card.png" alt="Bengali dish" class="post-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            <div class="post-img-placeholder">🍛</div>
+            <span class="post-cat-tag">Bengali</span>
+          </div>
+          <div class="post-body">
+            <p class="post-date">বাঙালিয়ানার স্বাদ</p>
+            <h3 class="post-title">Explore Our Bengali Cuisine</h3>
+            <p class="post-excerpt">As Bengalis, our soul belongs to Bengali cuisine. Explore with us the flavors, traditions, and timeless dishes of Bengal.</p>
+            <div class="post-footer">
+              <span class="post-author">The Pattanayaks' Food Diary</span>
+              <span class="expand-hint">Tap to explore <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+          </div>
+
+          <!-- ── EXPANDED SECTION — Bengali dishes ── -->
+          <div class="expanded-panel" id="panel-bengali">
+            <p class="panel-intro">🍛 Our Bengali food adventures so far:</p>
+            <div class="food-items-grid">
+
+              <!-- DISH 1 — Copy this block to add more Bengali dishes -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Bangladeshi_tehari.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">বাংলাদেশী তেহারী</h4>
+                  <p class="food-item-desc">Bangladeshi Tehari - Bangladeshi Tehari is an aromatic, deeply flavorful, and slightly pungent one-pot meat and rice dish that represents a cornerstone of festive street food culture in Bangladesh, most notably in Old Dhaka (Puran Dhaka).</p>
+                  <a href="https://www.instagram.com/p/Ceopea8Pq7Q/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+              <!-- END DISH — duplicate above block for more -->
+<div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Chicken_jhal.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">চিকেন ঝাল ফ্রাই</h4>
+                  <p class="food-item-desc">Chicken Jhal Fry - Chicken Jhal Fry is a fiery, tangy Indian stir-fry featuring tender chicken pieces tossed with crunchy bell peppers, onions, and tomatoes. Cooked over high heat with bold spices like cumin, green chilies, and garam masala, it delivers a spicy, mouthwatering kick.</p>
+                  <a href="https://www.instagram.com/p/Ceopea8Pq7Q/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+              
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/laxmi_bhog.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">লক্ষী পুজোর ভোগ</h4>
+                  <p class="food-item-desc">Lakshmi Puja Bhog - Lakshmi Puja bhog consists of sacred, strictly vegetarian (niramish) food offerings made to the Goddess of wealth and prosperity. Once offered during prayers, it is distributed to devotees as prasad. In the frame the platter consists of Basanti  Pulao, Khichuri, Beguni, Charchari, Fulkopi Bhapa, Paneer Posto, Bengal's Authentic Chutney, Payesh.</p>
+                  <a href="https://www.instagram.com/p/Cjh1y2LvwEu/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/chicken_bhuna_khichuri.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">চিকেন ভুনা খিচুরি</h4>
+                  <p class="food-item-desc">Chicken Bhuna Khichuri - Chicken Bhuna Khichuri is a rich, aromatic Bangladeshi one-pot meal made by cooking marinated chicken, rice, and roasted lentils together. The term bhuna refers to a slow-roasting technique where spices are caramelized, giving the dish a bold, dry, and pilaf-like texture rather than a mushy porridge consistency.</p>
+                  <a href="https://www.instagram.com/p/Cl9UQlMvM5S/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/biriyani1.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">বিরিয়ানি</h4>
+                  <p class="food-item-desc">Chicken Biriyani - Bengali-style chicken biryani , is a fragrant and refined rice dish featuring long-grain basmati rice, tender chicken, a subtle blend of spices, and its signature addition—a slow-cooked, golden-brown potato and a hard-boiled egg</p>
+                  <a href="https://www.instagram.com/p/CmhVpR0vwCX/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+               <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/rainy_platter.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">বৃষ্টিমূখর দুপুরে একটি অগোছালো খাবার প্লেট</h4>
+                  <p class="food-item-desc">Bengali Authentic Rainy Day Special Platter - When you are staying far away from your hometown, and you are a Bengali, and it's a rainy day. This is the platter you crave for. পদ:- ১.স্যালাড ২.পনীর ভাপা, ৩.সাদা ভাত, ৪.আলু-উচ্ছে ভাজা, ৫.ধনিয়া চিকেন </p>
+                  <a href="https://www.instagram.com/p/CufSDLhhmAR/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/kakra.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍛</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">কাঁকড়ার ঝাল</h4>
+                  <p class="food-item-desc">Kakrar Jhal - Kakrar Jhal is a traditional, spicy Bengali crab curry hailing from West Bengal, India. It features fresh crab (Kakra) and golden potato chunks slow-cooked in a fiery, rich gravy infused with mustard oil, aromatic spices, and a finishing touch of pungent mustard paste. </p>
+                  <a href="https://www.instagram.com/p/DD_41xRP3h6/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+              <!-- DISH 2 -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Koraishutir_Kachori.jpg" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🐟</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">কড়াইশুঁটির কচুরি & আলুর দম</h4>
+                  <p class="food-item-desc">Koraishutir Kochuri and Aloor Dom is a classic Bengali food combination featuring a deep-fried, puffed flatbread stuffed with spiced green peas, served alongside a rich, spicy potato curry. It is a beloved breakfast and celebratory dish, particularly popular during the winter months when fresh ingredients are abundant.</p>
+                  <a href="https://www.instagram.com/p/DUY3gPbEmvN/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+            </div><!-- /food-items-grid -->
+            <div class="panel-footer" onclick="event.stopPropagation()">
+              <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-instagram"></i> See all Bengali Cuisine Related posts
+              </a>
+            </div>
+          </div><!-- /expanded-panel bengali -->
+
+        </article><!-- /bengali card -->
+
+
+        <!-- ═══════════════════════════════════
+             ITALIAN CUISINE CARD
+        ════════════════════════════════════ -->
+        <article class="post-card expandable-card" data-cat="italian" id="card-italian" onclick="toggleCard('italian')">
+          <div class="post-img-wrap">
+            <img src="images/italian_card.png" alt="Italian dish" class="post-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            <div class="post-img-placeholder">🍝</div>
+            <span class="post-cat-tag italian">Italian</span>
+          </div>
+          <div class="post-body">
+            <p class="post-date">Gusto d'Italia</p>
+            <h3 class="post-title">Explore Our Italian Cuisine</h3>
+            <p class="post-excerpt">Italian cuisine is a celebration of simple ingredients and bold flavors. Explore with us the iconic dishes and timeless traditions of Italy.</p>
+            <div class="post-footer">
+              <span class="post-author">The Pattanayaks' Food Diary</span>
+              <span class="expand-hint">Tap to explore <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+          </div>
+
+          <!-- ── EXPANDED SECTION — Italian dishes ── -->
+          <div class="expanded-panel" id="panel-italian">
+            <p class="panel-intro">🍝 Our Italian food adventures so far:</p>
+            <div class="food-items-grid">
+
+              <!-- DISH 1 — Copy this block to add more Italian dishes -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/thin_crust_pizza.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍝</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Thin Crust Piri Piri Chicken Pizza</h4>
+                  <p class="food-item-desc">Inspired by Italy and crafted in our kitchen, this Chicken Piri Piri Thin Crust Pizza combines a crispy crust, flavorful piri piri chicken, and gooey melted cheese. A classic dish reimagined with our own touch of spice, warmth, and creativity.
+</p>
+                  <a href="https://www.instagram.com/p/CeegTN2vKxH/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/chicken_alfredo_penne.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍝</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title"> CHICKEN ALFREDO PENNE </h4>
+                  <p class="food-item-desc">Creamy, comforting, and irresistibly satisfying, our Chicken Alfredo Penne combines tender chicken, perfectly cooked pasta, and a velvety Alfredo sauce. Inspired by an Italian favorite and crafted with our own touch, it's a dish that brings comfort to every forkful.
+</p>
+                  <a href="https://www.instagram.com/p/DD-hI_1zPQg/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Shrimp Aglio e Olio.jpg" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍝</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Shrimp Aglio e Olio</h4>
+                  <p class="food-item-desc">A timeless Italian favorite featuring juicy shrimp, fragrant garlic, olive oil, and perfectly cooked pasta. Simple yet flavorful, our Shrimp Aglio e Olio is crafted with a touch of our own creativity while staying true to its Italian roots.
+</p>
+                  <a href="https://www.instagram.com/p/DS8Om_6kxRB/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+              
+              <!-- END DISH -->
+
+              <!-- DISH 2 -->
+              <!-- <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/italian-dish2.jpg" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍕</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Your Dish Name Here</h4>
+                  <p class="food-item-desc">Write a short description — where you had it, how it tasted, what made it special.</p>
+                  <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div> -->
+
+            </div><!-- /food-items-grid -->
+            <div class="panel-footer" onclick="event.stopPropagation()">
+              <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-instagram"></i> See all Italian Cuisine Related posts
+              </a>
+            </div>
+          </div><!-- /expanded-panel italian -->
+
+        </article><!-- /italian card -->
+
+
+        <!-- ═══════════════════════════════════
+             RANDOM CUISINE CARD
+        ════════════════════════════════════ -->
+        <article class="post-card expandable-card" data-cat="random" id="card-random" onclick="toggleCard('random')">
+          <div class="post-img-wrap">
+            <img src="images/Random_card.png" alt="Random dish" class="post-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+            <div class="post-img-placeholder">🌍</div>
+            <span class="post-cat-tag random">Random</span>
+          </div>
+          <div class="post-body">
+            <p class="post-date">Random Bites</p>
+            <h3 class="post-title">What We Randomly Explored</h3>
+            <p class="post-excerpt">At random days and nights we explored random bites to kill random cravings.</p>
+            <div class="post-footer">
+              <span class="post-author">The Pattanayaks' Food Diary</span>
+              <span class="expand-hint">Tap to explore <i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+          </div>
+
+          <!-- ── EXPANDED SECTION — Random dishes ── -->
+          <div class="expanded-panel" id="panel-random">
+            <p class="panel-intro">🌍 Our random food adventures so far:</p>
+            <div class="food-items-grid">
+
+              <!-- DISH 1 — Copy this block to add more Random dishes -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Fried Rice.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🌍</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Fried Rice</h4>
+                  <p class="food-item-desc">More than just a side dish, our Fried Rice is a comforting bowl of flavors and textures. Wok-tossed with fresh ingredients, vibrant vegetables, and signature seasonings, it's a simple classic elevated with our own culinary touch. Every bite is hearty, flavorful, and made to satisfy.
+</p>
+                  <a href="https://www.instagram.com/p/CegzIWCvV6m/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+            
+
+              <!-- DISH 1 — Copy this block to add more Random dishes -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Chilli_chicken.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🌍</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Chilli Chicken</h4>
+                  <p class="food-item-desc">A comforting Chinese classic with a touch of Bengaliness. Our Chilli Chicken brings together tender chicken, vibrant vegetables, and bold flavors, elevated with the warmth and spice that reflect our roots. Familiar yet uniquely ours, it's the perfect fusion of comfort, flavor, and tradition.
+</p>
+                  <a href="https://www.instagram.com/p/CegzIWCvV6m/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+           
+
+              <!-- DISH 1 — Copy this block to add more Random dishes -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/fish finger.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🌍</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Bhetki Fish Fingers</h4>
+                  <p class="food-item-desc">Crispy on the outside and tender within, our Bhetki Fish Fingers are crafted from premium Bhetki fish fillets and coated to golden perfection. A beloved Bengali favorite, these delicious bites combine delicate fish flavors with a satisfying crunch, making them the perfect comfort snack. Simple, elegant, and full of nostalgia.</p>
+                  <a href="https://www.instagram.com/p/Cl9VLmLvpF0/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+             
+
+              <!-- DISH 1 — Copy this block to add more Random dishes -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Burger.webp" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🌍</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Chicken Burger</h4>
+                  <p class="food-item-desc">A classic comfort food done our way. Our Chicken Burger combines a juicy chicken patty, crisp lettuce, fresh onions, and ripe tomatoes, all tucked inside a perfectly toasted bun. Simple, hearty, and full of flavor, it's a satisfying bite that's sure to hit the spot every time.</p>
+                  <a href="https://www.instagram.com/p/DEAzuq2BkCX/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+              <!-- END DISH -->
+
+              <!-- DISH 2 -->
+              <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/Honey garlic chicken.png" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍜</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Honey - garlic chicken</h4>
+                  <p class="food-item-desc">Sweet, savory, and irresistibly delicious, our Honey Garlic Chicken brings together tender chicken coated in a rich glaze of honey and garlic. The perfect balance of sweetness and bold flavor creates a dish that's both comforting and indulgent. Finished with a touch of honey and garnished with sesame seeds, it's a crowd-pleasing favorite that delivers warmth and flavor in every bite.</p>
+                  <a href="https://www.instagram.com/p/DY-rfsESgqv/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div>
+
+
+              <!-- <div class="food-item" onclick="event.stopPropagation()">
+                <div class="food-item-img-wrap">
+                  <img src="images/random-dish2.jpg" alt="Dish name" class="food-item-img" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
+                  <div class="food-item-placeholder">🍜</div>
+                </div>
+                <div class="food-item-body">
+                  <h4 class="food-item-title">Your Dish Name Here</h4>
+                  <p class="food-item-desc">Write a short description — where you had it, how it tasted, what made it special.</p>
+                  <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="food-item-ig-btn" onclick="event.stopPropagation()">
+                    <i class="fa-brands fa-instagram"></i> See on Instagram
+                  </a>
+                </div>
+              </div> -->
+
+            </div><!-- /food-items-grid -->
+            <div class="panel-footer" onclick="event.stopPropagation()">
+              <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-instagram"></i> See all Random posts
+              </a>
+            </div>
+          </div><!-- /expanded-panel random -->
+
+        </article><!-- /random card -->
+
+      </div><!-- /posts-grid -->
+
+      <!-- ADD MORE POSTS NOTE -->
+      <div class="add-more-note">
+        <p>Visit Our Instagram Page to Explore all the posts</p>
+        <p>🍴 More dishes coming soon — follow us on Instagram for the latest!</p>
+        <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank" class="btn btn-primary">@pattanayakscuisine</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>Pattanayak's Cuisine</span>
+        <p>Presenting our take on various cuisines across the world.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="about.html">About Us</a>
+        <a href="joinus.html">Join Us</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/pattanayakscuisine/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/17nP2fxaYD/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaCn9EvCRs1x3YvdQt1g" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Soham Pattanayak. Made with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+   <!-- Chatbot intro bubble -->
+<div class="chatbot-intro-bubble" id="chatbotIntroBubble" onclick="openChatFromBubble()">
+  <span>👩‍🍳 Hi, I'm Chef Saini!</span>
+  <span style="color:var(--text-muted);font-size:0.76rem;">Ask me anything</span>
+  <button class="bubble-close" onclick="closeBubble(event)" aria-label="Close">✕</button>
+</div>
+  <button class="chatbot-fab" id="chatbotFab" aria-label="Open Recipe Chatbot">
+    <i class="fa-solid fa-robot"></i>
+    <span class="fab-tooltip">Ask about recipes!</span>
+  </button>
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">👩‍🍳</div>
+        <div>
+          <strong>Chef Saini</strong>
+          <span>Ask me anything about food!</span>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-msg bot">
+        <div class="chat-bubble">👋 Hi! I'm Chef Saini. Ask me about any dish, recipe, or cuisine!</div>
+      </div>
+      <div class="chat-suggestions">
+        <button class="chat-suggestion" onclick="sendSuggestion(this)">How to make Hilsa curry?</button>
+        <button class="chat-suggestion" onclick="sendSuggestion(this)">Easy pasta recipe</button>
+        <button class="chat-suggestion" onclick="sendSuggestion(this)">What is mishti doi?</button>
+      </div>
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatInput" placeholder="Ask about any recipe..." />
+      <button id="chatSend"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script>
+    function toggleCard(name) {
+      var card  = document.getElementById("card-" + name);
+      var panel = document.getElementById("panel-" + name);
+      var isOpen = card.classList.contains("card-open");
+
+      // Close all first
+      document.querySelectorAll(".expandable-card").forEach(function(c) {
+        c.classList.remove("card-open");
+      });
+      document.querySelectorAll(".expanded-panel").forEach(function(p) {
+        p.style.maxHeight = null;
+        p.style.paddingTop = "0";
+        p.style.paddingBottom = "0";
+      });
+
+      // If it was closed, open it now
+      if (!isOpen) {
+        card.classList.add("card-open");
+        panel.style.maxHeight = panel.scrollHeight + 200 + "px";
+        panel.style.paddingTop = "20px";
+        panel.style.paddingBottom = "24px";
+        // Smooth scroll to card after short delay
+        setTimeout(function() {
+          card.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 150);
+      }
+    }
+  </script>
+  <script>
+  function closeBubble(e) {
+    e.stopPropagation();
+    document.getElementById("chatbotIntroBubble").classList.add("hide");
+  }
+  function openChatFromBubble() {
+    document.getElementById("chatbotIntroBubble").classList.add("hide");
+    document.getElementById("chatbotPanel").classList.add("open");
+    document.getElementById("chatbotFab").classList.add("active");
+    document.getElementById("chatInput").focus();
+  }
+</script>
+
+<script>
+  // 3D hover tilt effect for cuisine cards
+  document.querySelectorAll(".expandable-card").forEach(function(card) {
+
+    card.addEventListener("mousemove", function(e) {
+      // Don't apply tilt if card is already expanded
+      if (card.classList.contains("card-open")) return;
+
+      var rect = card.getBoundingClientRect();
+
+      // Mouse position relative to card center (range -1 to 1)
+      var x = (e.clientX - rect.left) / rect.width  - 0.5;
+      var y = (e.clientY - rect.top)  / rect.height - 0.5;
+
+      // Max tilt in degrees — keep it subtle
+      var maxTilt = 8;
+      var tiltX = -y * maxTilt;  // tilt up/down
+      var tiltY =  x * maxTilt;  // tilt left/right
+
+      card.style.transform =
+        "perspective(1000px)" +
+        "rotateX(" + tiltX.toFixed(2) + "deg)" +
+        "rotateY(" + tiltY.toFixed(2) + "deg)" +
+        "translateZ(8px)" +
+        "scale(1.02)";
+
+      card.style.boxShadow =
+        "0 20px 60px rgba(26,95,85,0.18)," +
+        (-x * 20) + "px " + (-y * 20) + "px 30px rgba(0,0,0,0.08)";
+    });
+
+    // Smoothly reset when mouse leaves
+    card.addEventListener("mouseleave", function() {
+      card.style.transform = "";
+      card.style.boxShadow = "";
+    });
+
+    // Instantly reset when card is tapped/clicked
+    card.addEventListener("mousedown", function() {
+      card.style.transform = "";
+      card.style.boxShadow = "";
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# ── Secrets (NEVER commit these) ──────────────────────
+functions/.env
+functions/.env.*
+js/config.js
+
+# ── Firebase / Node ───────────────────────────────────
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+node_modules/
+functions/node_modules/
+
+# ── Editor / OS ───────────────────────────────────────
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
